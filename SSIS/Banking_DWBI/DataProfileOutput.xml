@@ -1,0 +1,3913 @@
+<?xml version="1.0"?>
+<DataProfile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources>
+    <DtsDataSource ID="{AAB73256-C75C-45E6-8BED-70723B347AFB}" Name="DataProfileOutput.xml">
+      <DtsConnectionManagerID>DataProfileOutput.xml</DtsConnectionManagerID>
+    </DtsDataSource>
+    <DtsDataSource ID="{A8AFE344-62C9-401B-8815-DA4267B60184}" Name="LAPTOP-43FUKUKB\MSSQLSERVER2.Banking_Staging">
+      <DtsConnectionManagerID>LAPTOP-43FUKUKB\MSSQLSERVER2.Banking_Staging</DtsConnectionManagerID>
+    </DtsDataSource>
+  </DataSources>
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <ColumnPatternProfileRequest ID="PatternReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <Column IsWildCard="true" />
+        <MaxNumberOfPatterns>10</MaxNumberOfPatterns>
+        <PercentageDataCoverageDesired>95</PercentageDataCoverageDesired>
+        <CaseSensitive>false</CaseSensitive>
+        <Delimiters> \t\r\n</Delimiters>
+        <Symbols>,.;:-"'`~=&amp;/\\@!?()&lt;&gt;[]{}|#*^%</Symbols>
+        <TagTableName />
+      </ColumnPatternProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+      <FunctionalDependencyProfileRequest ID="FDReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table Schema="dbo" Table="StgCustomer" />
+        <DeterminantColumns>
+          <Column IsWildCard="true" />
+        </DeterminantColumns>
+        <DependentColumn IsWildCard="true" />
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <FDStrengthThreshold>0.95</FDStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </FunctionalDependencyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>5000</MaxValue>
+        <Mean>2500.5</Mean>
+        <StdDev>1443.37564410655</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>18</MinValue>
+        <MaxValue>69</MaxValue>
+        <Mean>43.4698</Mean>
+        <StdDev>15.144156891686</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>19458794854</MinValue>
+        <MaxValue>19458799853</MaxValue>
+        <Mean>19458797353.5</Mean>
+        <StdDev>1446.99570033915</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>5000</MaxValue>
+        <Mean>2500.5</Mean>
+        <StdDev>1443.37564410655</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>18</MinValue>
+        <MaxValue>69</MaxValue>
+        <Mean>43.4698</Mean>
+        <StdDev>15.144156891686</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>19458794854</MinValue>
+        <MaxValue>19458799853</MaxValue>
+        <Mean>19458797353.5</Mean>
+        <StdDev>1446.99570033915</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnNullRatioProfile ProfileRequestID="NullRatioReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NullCount>0</NullCount>
+      </ColumnNullRatioProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>1</MinValue>
+        <MaxValue>5000</MaxValue>
+        <Mean>2500.5</Mean>
+        <StdDev>1443.37564410655</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>18</MinValue>
+        <MaxValue>69</MaxValue>
+        <Mean>43.4698</Mean>
+        <StdDev>15.144156891686</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnStatisticsProfile IsExact="true" ProfileRequestID="StatisticsReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <MinValue>19458794854</MinValue>
+        <MaxValue>19458799853</MaxValue>
+        <Mean>19458797353.5</Mean>
+        <StdDev>1446.99570033915</StdDev>
+      </ColumnStatisticsProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>11</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>184</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1232</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>1184</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>501</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1283</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>11</Length>
+            <Count>97</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>519</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>3</MinLength>
+        <MaxLength>9</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>188</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>3</Length>
+            <Count>96</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1497</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>522</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>316</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1557</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>824</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>6</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1727</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>1634</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1639</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>16</MinLength>
+        <MaxLength>29</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>23</Length>
+            <Count>579</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>29</Length>
+            <Count>7</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>26</Length>
+            <Count>74</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>21</Length>
+            <Count>978</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>27</Length>
+            <Count>21</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>24</Length>
+            <Count>361</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>18</Length>
+            <Count>271</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>19</Length>
+            <Count>653</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>25</Length>
+            <Count>182</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>22</Length>
+            <Count>913</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>16</Length>
+            <Count>8</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>17</Length>
+            <Count>57</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>20</Length>
+            <Count>886</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>28</Length>
+            <Count>10</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>11</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>184</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1232</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>1184</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>501</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1283</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>11</Length>
+            <Count>97</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>519</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>3</MinLength>
+        <MaxLength>9</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>188</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>3</Length>
+            <Count>96</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1497</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>522</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>316</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1557</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>824</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>6</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1727</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>1634</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1639</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>16</MinLength>
+        <MaxLength>29</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>23</Length>
+            <Count>579</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>29</Length>
+            <Count>7</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>26</Length>
+            <Count>74</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>21</Length>
+            <Count>978</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>27</Length>
+            <Count>21</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>24</Length>
+            <Count>361</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>18</Length>
+            <Count>271</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>19</Length>
+            <Count>653</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>25</Length>
+            <Count>182</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>22</Length>
+            <Count>913</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>16</Length>
+            <Count>8</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>17</Length>
+            <Count>57</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>20</Length>
+            <Count>886</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>28</Length>
+            <Count>10</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>11</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>184</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1232</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>1184</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>501</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1283</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>11</Length>
+            <Count>97</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>519</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>3</MinLength>
+        <MaxLength>9</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>9</Length>
+            <Count>188</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>3</Length>
+            <Count>96</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1497</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>7</Length>
+            <Count>522</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>316</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1557</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>8</Length>
+            <Count>824</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>4</MinLength>
+        <MaxLength>6</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>6</Length>
+            <Count>1727</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>4</Length>
+            <Count>1634</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>5</Length>
+            <Count>1639</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <ColumnLengthDistributionProfile ProfileRequestID="LengthDistReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+        <MinLength>16</MinLength>
+        <MaxLength>29</MaxLength>
+        <LengthDistribution>
+          <LengthDistributionItem>
+            <Length>23</Length>
+            <Count>579</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>29</Length>
+            <Count>7</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>26</Length>
+            <Count>74</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>21</Length>
+            <Count>978</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>27</Length>
+            <Count>21</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>24</Length>
+            <Count>361</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>18</Length>
+            <Count>271</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>19</Length>
+            <Count>653</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>25</Length>
+            <Count>182</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>22</Length>
+            <Count>913</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>16</Length>
+            <Count>8</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>17</Length>
+            <Count>57</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>20</Length>
+            <Count>886</Count>
+          </LengthDistributionItem>
+          <LengthDistributionItem>
+            <Length>28</Length>
+            <Count>10</Count>
+          </LengthDistributionItem>
+        </LengthDistribution>
+      </ColumnLengthDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <KeyColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5000</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <KeyColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5000</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <KeyColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5000</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>50</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Ronald</Value>
+            <Count>123</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Deborah</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Joseph</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Daniel</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Amanda</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Timothy</Value>
+            <Count>124</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Linda</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Donna</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Melissa</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Michael</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sandra</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Margaret</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>James</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sarah</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mark</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nancy</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lisa</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Ashley</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Elizabeth</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Brian</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kevin</Value>
+            <Count>78</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kenneth</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jessica</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Matthew</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Stephanie</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Karen</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Betty</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Donald</Value>
+            <Count>69</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Barbara</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Patricia</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jennifer</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mary</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Emily</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Christopher</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>David</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>William</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Michelle</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Anthony</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Robert</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Andrew</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thomas</Value>
+            <Count>109</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Steven</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Susan</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Carol</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Richard</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>John</Value>
+            <Count>76</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Charles</Value>
+            <Count>115</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Paul</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Joshua</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kimberly</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>50</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Ronald</Value>
+            <Count>123</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Deborah</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Joseph</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Daniel</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Amanda</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Timothy</Value>
+            <Count>124</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Linda</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Donna</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Melissa</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Michael</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sandra</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Margaret</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>James</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sarah</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mark</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nancy</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lisa</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Ashley</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Elizabeth</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Brian</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kevin</Value>
+            <Count>78</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kenneth</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jessica</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Matthew</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Stephanie</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Karen</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Betty</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Donald</Value>
+            <Count>69</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Barbara</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Patricia</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jennifer</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mary</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Emily</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Christopher</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>David</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>William</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Michelle</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Anthony</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Robert</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Andrew</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thomas</Value>
+            <Count>109</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Steven</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Susan</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Carol</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Richard</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>John</Value>
+            <Count>76</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Charles</Value>
+            <Count>115</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Paul</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Joshua</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kimberly</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>50</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Ronald</Value>
+            <Count>123</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Deborah</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Joseph</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Daniel</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Amanda</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Timothy</Value>
+            <Count>124</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Linda</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Donna</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Melissa</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Michael</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sandra</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Margaret</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>James</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sarah</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mark</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nancy</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lisa</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Ashley</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Elizabeth</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Brian</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kevin</Value>
+            <Count>78</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kenneth</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jessica</Value>
+            <Count>81</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Matthew</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Stephanie</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Karen</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Betty</Value>
+            <Count>114</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Donald</Value>
+            <Count>69</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Barbara</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Patricia</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jennifer</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mary</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Emily</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Christopher</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>David</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>William</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Michelle</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Anthony</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Robert</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Andrew</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thomas</Value>
+            <Count>109</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Steven</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Susan</Value>
+            <Count>92</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Carol</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Richard</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>John</Value>
+            <Count>76</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Charles</Value>
+            <Count>115</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Paul</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Joshua</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Kimberly</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>50</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Davis</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Gonzalez</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Johnson</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lee</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Walker</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rodriguez</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Smith</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Campbell</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Taylor</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Flores</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Wilson</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Green</Value>
+            <Count>74</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mitchell</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sanchez</Value>
+            <Count>119</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hall</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jones</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Martinez</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rivera</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Robinson</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Wright</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jackson</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lewis</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Martin</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Roberts</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Anderson</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nelson</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Clark</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Torres</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>King</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Brown</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Ramirez</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Carter</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lopez</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thompson</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Garcia</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Young</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Williams</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Scott</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hernandez</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nguyen</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Allen</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Miller</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Harris</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>White</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thomas</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hill</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Adams</Value>
+            <Count>121</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Perez</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Baker</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Moore</Value>
+            <Count>119</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>50</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Davis</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Gonzalez</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Johnson</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lee</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Walker</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rodriguez</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Smith</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Campbell</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Taylor</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Flores</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Wilson</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Green</Value>
+            <Count>74</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mitchell</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sanchez</Value>
+            <Count>119</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hall</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jones</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Martinez</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rivera</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Robinson</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Wright</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jackson</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lewis</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Martin</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Roberts</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Anderson</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nelson</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Clark</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Torres</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>King</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Brown</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Ramirez</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Carter</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lopez</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thompson</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Garcia</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Young</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Williams</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Scott</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hernandez</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nguyen</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Allen</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Miller</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Harris</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>White</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thomas</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hill</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Adams</Value>
+            <Count>121</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Perez</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Baker</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Moore</Value>
+            <Count>119</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>50</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Davis</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Gonzalez</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Johnson</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lee</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Walker</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rodriguez</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Smith</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Campbell</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Taylor</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Flores</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Wilson</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Green</Value>
+            <Count>74</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Mitchell</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Sanchez</Value>
+            <Count>119</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hall</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jones</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Martinez</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Rivera</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Robinson</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Wright</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Jackson</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lewis</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Martin</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Roberts</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Anderson</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nelson</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Clark</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Torres</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>King</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Brown</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Ramirez</Value>
+            <Count>107</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Carter</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Lopez</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thompson</Value>
+            <Count>117</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Garcia</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Young</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Williams</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Scott</Value>
+            <Count>88</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hernandez</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Nguyen</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Allen</Value>
+            <Count>87</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Miller</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Harris</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>White</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Thomas</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Hill</Value>
+            <Count>111</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Adams</Value>
+            <Count>121</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Perez</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Baker</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Moore</Value>
+            <Count>119</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>52</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>23</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>46</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>69</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>29</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>52</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>66</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>32</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>26</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>35</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>63</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>43</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>55</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>49</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>67</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>21</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>27</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>58</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>64</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>38</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>44</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>50</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>24</Value>
+            <Count>109</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>47</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>30</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>18</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>61</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>41</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>65</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>19</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>25</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>36</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>62</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>42</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>56</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>22</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>59</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>33</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>39</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>53</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>45</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>48</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>31</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>60</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>34</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>40</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>54</Value>
+            <Count>75</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>20</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>68</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>28</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>57</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>37</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>51</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>52</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>23</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>46</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>69</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>29</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>52</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>66</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>32</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>26</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>35</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>63</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>43</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>55</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>49</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>67</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>21</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>27</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>58</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>64</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>38</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>44</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>50</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>24</Value>
+            <Count>109</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>47</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>30</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>18</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>61</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>41</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>65</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>19</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>25</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>36</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>62</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>42</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>56</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>22</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>59</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>33</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>39</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>53</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>45</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>48</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>31</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>60</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>34</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>40</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>54</Value>
+            <Count>75</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>20</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>68</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>28</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>57</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>37</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>51</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>52</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>23</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>46</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>69</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>29</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>52</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>66</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>32</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>26</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>35</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>63</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>43</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>55</Value>
+            <Count>112</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>49</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>67</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>21</Value>
+            <Count>99</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>27</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>58</Value>
+            <Count>101</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>64</Value>
+            <Count>103</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>38</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>44</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>50</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>24</Value>
+            <Count>109</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>47</Value>
+            <Count>108</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>30</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>18</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>61</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>41</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>65</Value>
+            <Count>113</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>19</Value>
+            <Count>106</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>25</Value>
+            <Count>94</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>36</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>62</Value>
+            <Count>83</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>42</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>56</Value>
+            <Count>105</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>22</Value>
+            <Count>98</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>59</Value>
+            <Count>90</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>33</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>39</Value>
+            <Count>95</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>53</Value>
+            <Count>86</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>45</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>48</Value>
+            <Count>84</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>31</Value>
+            <Count>100</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>60</Value>
+            <Count>91</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>34</Value>
+            <Count>85</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>40</Value>
+            <Count>93</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>54</Value>
+            <Count>75</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>20</Value>
+            <Count>89</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>68</Value>
+            <Count>96</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>28</Value>
+            <Count>102</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>57</Value>
+            <Count>104</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>37</Value>
+            <Count>97</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>51</Value>
+            <Count>79</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>3</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Male</Value>
+            <Count>1634</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Female</Value>
+            <Count>1727</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Other</Value>
+            <Count>1639</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>3</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Male</Value>
+            <Count>1634</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Female</Value>
+            <Count>1727</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Other</Value>
+            <Count>1639</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>3</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>Male</Value>
+            <Count>1634</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Female</Value>
+            <Count>1727</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>Other</Value>
+            <Count>1639</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <KeyColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5000</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <KeyColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5000</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <CandidateKeyProfile IsExact="true" ProfileRequestID="KeyReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <KeyColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </KeyColumns>
+        <IsExactKey>true</IsExactKey>
+      </CandidateKeyProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>5000</NumberOfDistinctValues>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2139</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>andrew.harris@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>andrew.ramirez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>barbara.miller@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>charles.gonzalez@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>daniel.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>daniel.sanchez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>david.hall@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>david.taylor@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>emily.adams@kag.com</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>emily.williams@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>james.johnson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>jennifer.ramirez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>karen.thomas@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>kenneth.mitchell@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>kimberly.young@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>linda.flores@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>lisa.thompson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>margaret.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>mark.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>mary.nguyen@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>matthew.jackson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>matthew.roberts@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>michelle.martin@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>nancy.wright@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>patricia.miller@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>patricia.walker@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>paul.wilson@kag.com</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>robert.martinez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>ronald.garcia@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>sarah.wright@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>steven.taylor@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>thomas.jones@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>timothy.torres@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>timothy.walker@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2139</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>andrew.harris@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>andrew.ramirez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>barbara.miller@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>charles.gonzalez@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>daniel.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>daniel.sanchez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>david.hall@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>david.taylor@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>emily.adams@kag.com</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>emily.williams@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>james.johnson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>jennifer.ramirez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>karen.thomas@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>kenneth.mitchell@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>kimberly.young@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>linda.flores@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>lisa.thompson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>margaret.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>mark.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>mary.nguyen@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>matthew.jackson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>matthew.roberts@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>michelle.martin@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>nancy.wright@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>patricia.miller@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>patricia.walker@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>paul.wilson@kag.com</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>robert.martinez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>ronald.garcia@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>sarah.wright@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>steven.taylor@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>thomas.jones@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>timothy.torres@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>timothy.walker@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnValueDistributionProfile IsExact="true" ProfileRequestID="ValueDistReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <NumberOfDistinctValues>2139</NumberOfDistinctValues>
+        <ValueDistribution>
+          <ValueDistributionItem>
+            <Value>andrew.harris@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>andrew.ramirez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>barbara.miller@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>charles.gonzalez@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>daniel.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>daniel.sanchez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>david.hall@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>david.taylor@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>emily.adams@kag.com</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>emily.williams@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>james.johnson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>jennifer.ramirez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>karen.thomas@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>kenneth.mitchell@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>kimberly.young@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>linda.flores@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>lisa.thompson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>margaret.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>mark.moore@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>mary.nguyen@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>matthew.jackson@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>matthew.roberts@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>michelle.martin@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>nancy.wright@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>patricia.miller@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>patricia.walker@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>paul.wilson@kag.com</Value>
+            <Count>8</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>robert.martinez@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>ronald.garcia@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>sarah.wright@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>steven.taylor@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>thomas.jones@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>timothy.torres@kag.com</Value>
+            <Count>7</Count>
+          </ValueDistributionItem>
+          <ValueDistributionItem>
+            <Value>timothy.walker@kag.com</Value>
+            <Count>6</Count>
+          </ValueDistributionItem>
+        </ValueDistribution>
+      </ColumnValueDistributionProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>FEMALE</RegexText>
+            <Frequency>35</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>OTHER</RegexText>
+            <Frequency>33</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>MALE</RegexText>
+            <Frequency>33</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+\.\p{L}+@KAG\.COM</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>FEMALE</RegexText>
+            <Frequency>35</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>OTHER</RegexText>
+            <Frequency>33</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>MALE</RegexText>
+            <Frequency>33</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq1" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+ \. \p{L}+ @ KAG \. COM</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>FEMALE</RegexText>
+            <Frequency>35</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>OTHER</RegexText>
+            <Frequency>33</Frequency>
+          </PatternDistributionItem>
+          <PatternDistributionItem>
+            <RegexText>MALE</RegexText>
+            <Frequency>33</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <ColumnPatternProfile ProfileRequestID="PatternReq2" IsExact="true">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <TopRegexPatterns>
+          <PatternDistributionItem>
+            <RegexText>\p{L}+ \. \p{L}+ @ KAG \. COM</RegexText>
+            <Frequency>100</Frequency>
+          </PatternDistributionItem>
+        </TopRegexPatterns>
+      </ColumnPatternProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Gender" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Age" SqlDbType="TinyInt" MaxLength="0" Precision="3" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Contact_Number" SqlDbType="BigInt" MaxLength="0" Precision="19" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Customer_ID" SqlDbType="SmallInt" MaxLength="0" Precision="5" Scale="0" LCID="-1" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="Last_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq1">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+      <FunctionalDependencyProfile IsExact="true" ProfileRequestID="FDReq2">
+        <DataSourceID>{A8AFE344-62C9-401B-8815-DA4267B60184}</DataSourceID>
+        <Table DataSource="LAPTOP-43FUKUKB\MSSQLSERVER2" Database="Banking_Staging" Schema="dbo" Table="StgCustomer" RowCount="5000" />
+        <DeterminantColumns>
+          <Column Name="Email" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        </DeterminantColumns>
+        <DependentColumn Name="First_Name" SqlDbType="NVarChar" MaxLength="50" Precision="255" Scale="255" LCID="1033" CodePage="0" IsNullable="true" StringCompareOptions="0" />
+        <IsExactFD>true</IsExactFD>
+      </FunctionalDependencyProfile>
+    </Profiles>
+  </DataProfileOutput>
+</DataProfile>
